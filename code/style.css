@@ -1,0 +1,270 @@
+/* Basic CSS stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-image: url(white\ paper.webp);
+}
+
+header {     
+    padding: 75px;
+    padding-left: 10px;
+
+}
+
+header  h1 {
+    font-family: 'Fascinate';
+    text-align: left;
+    font-size: 175px;
+    display: block;
+    padding: 75px 75px 0 75px;
+    margin: 0;
+    line-height: 1.25;
+    text-shadow: 5px 5px 5px #a3a3a3;
+}
+
+header h2 {
+    display: block;
+    padding-left: 100px;
+    margin: 0;
+    font-family: 'Cal Sans';
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #5e5e64;
+}
+
+header a:link, header a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav {
+    padding: 25px 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Cal Sans';
+    font-size: 35px;
+
+}
+
+nav li {
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 5px #555555;
+}
+
+nav a:link, nav a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Home Page Styles */
+
+#home {
+    display: grid;
+    text-align: center;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "about about"
+    "about portrait"
+    "school skills"
+    "socials software";
+    padding: 50px 150px 0 0;
+}
+
+.about {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.about h2 {
+    font-family: 'Bungee';
+    font-size: 50px;
+    padding: 20px;
+}
+
+.about h3 {
+    font-family: 'Fascinate';
+    font-size: 40px;
+    padding: 20px 20px 0;
+    color: rgb(99, 201, 99);
+}
+
+.about p {
+    padding: 10px 20px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+    font-size: 20px;
+}
+
+.portrait img {
+    width: 500px;      
+    height: 500px;    
+    object-fit: cover; 
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #333333;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.school {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.school h3 {
+    font-family: 'Bungee';
+    font-size: 40px;
+    padding-left: 25px;
+}
+
+.school ul {
+    padding: 25px 0 0 50px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+}
+
+.skills {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.skills h3 {
+    font-family: 'Bungee';
+    font-size: 40px;
+    padding-left: 25px;
+}
+
+.skills ul {
+    padding: 25px 0 100px 50px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+    line-height: 2;
+}
+
+.socials {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.socials h3 {
+    font-family: 'Bungee';
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.socials ul {
+    padding: 25px 0 0 50px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+}
+
+.socials a:link, .socials a:visited {
+    color: #5e5e64;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.software h3 {
+    font-family: 'Bungee';
+    font-size: 40px;
+    margin: 30px 250px 30px 0px;
+}
+
+.software ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.software img {   
+    height: 100px;    
+    filter: drop-shadow(3px 3px 5px #505050);
+}
+
+/* Graphic Design Styles */
+
+.events h2 {
+    font-family: 'Yusei Magic';
+    font-size: 80px;
+    padding: 20px;
+    margin: 150px 0px 200px 0px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 5px;
+}
+
+.events ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 150px 0px 200px 0px;
+    gap: 50px;
+}
+
+.events img {   
+    filter: drop-shadow(3px 3px 7px #686868);
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.phone {
+    position: absolute;
+    transform: translateX(760px) translateY(-760px);
+    z-index: 1;
+    height: 700px;
+    filter: drop-shadow(#777777 5px 5px 10px);
+}
+
+.posters img, .illustrations img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.posters ul, .illustrations ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+}
+
+
+/* Footer Styles */
+
+footer { 
+    background-color: #bdbdbd;
+    text-align: center;
+    padding: 50px;
+    color: #3d3d3d;
+    font-style: italic;
+}
+
+footer a:link, footer a:visited {
+    color:#4d4957;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-family: Cal Sans;
+    font-style: normal;
+}
