@@ -341,7 +341,7 @@ input[type="submit"] {
     transform: translateX(760px) translateY(-860px);
     z-index: 1;
     height: 700px;
-    filter: drop-shadow(#777777 5px 5px 10px);
+    filter: drop-shadow(5px 5px 10px #777777);
 }
 
 
